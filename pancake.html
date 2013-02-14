@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grains - Crêpes</title>
+		<meta charset="utf-8" />
+
+
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<link rel="stylesheet" href="js/jquery.mobile-1.2.0.min.css" />
+		<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+
+		<link rel="stylesheet" href="pancake.css" />
+
+		<script type="text/javascript" src="js/paper.js"></script>
+		<script type="text/javascript" src="pancake.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var app = new PancakeApp();
+				app.start("app-canvas");
+			});
+		</script>
+	</head>
+	<body>
+		<div id="app">
+			<div id="rules">
+				<div id="rules-text">
+					<h1>Instructions</h1>
+					Utilisez votre spatule pour retourner les crêpes jusqu'à obtenir une pile ordonnée de la plus grande (en bas) à la plus petite (en haut). La spatule retourne la pile des crêpes dont la base est celle sur laquelle vous cliquez.
+				</div>
+				<div id="count">			
+					<img id="spatule" style="height: 30px;" src="spatule.png" />
+					<div id="flip">Retournements :</div>
+					</div>
+			</div>
+			<canvas id="app-canvas" resize></canvas>
+			<div id="foot-menu">
+    			<button id="shuffle" data-mini="true">Mélanger</button>
+				<input type="range" name="slider-1" id="slider-1" value="10" min="5" max="20" data-mini="true"/>
+			</div>
+		</div>
+	</body>
+</html>
