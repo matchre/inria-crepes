@@ -1,5 +1,34 @@
 {
 	"name": "Pile de crêpes",
 	"width": "600px",
-	"height": "400px"
+	"height": "400px",
+	"comment" : "Mettre dans l’ordre une pile de crêpes de différentes tailles . . pour comprendre comment en pratique concevoir un algorithme",
+	"authors" : [
+		{
+			"name" : "Monte, Régis",
+			"role" : "auteur",
+			"comment" : "version initiale en Java"
+		},
+		{
+			"name" : "Delorme, Marc"
+			"role" : "auteur",
+			"comment" : "version HTLM5/JS"
+		}
+		{
+			"name" : "http://www.junior-supelec.fr"
+			"role" : "producteur"
+		}
+		],
+	"licence" : [
+		{
+			"name" : "CC BY-NC-SA",
+			"link" : "http://creativecommons.org/licenses/by-nc-sa/3.0/fr",
+			"comment" : "s'applique aux documents"
+		},
+		{
+			"name" : "CeCILL-C",
+			"link" : "http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html",
+			"comment" : "s'applique au code source"
+		}
+		]
 }
