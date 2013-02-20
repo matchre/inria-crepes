@@ -3,6 +3,16 @@
 	"width": "600px",
 	"height": "400px",
 	"comment" : "Mettre dans l’ordre une pile de crêpes de différentes tailles . . pour comprendre comment en pratique concevoir un algorithme",
+	"links" : [
+		{
+			"title" : "Document original dans lequel ce grain s'insère",
+			"link" : "http://interstices.info/algo-crepes"
+		},
+		{
+			"title" : "Activité connexe en mode «débranché»",
+			"link" : "http://www-sop.inria.fr/science-participative/mecsci/?page=Grain3.0:Le_cr%C3%AApier_psycho-rigide"		
+		}
+		],
 	"authors" : [
 		{
 			"name" : "Monte, Régis",
