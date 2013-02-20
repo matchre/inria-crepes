@@ -20,12 +20,12 @@
 			"comment" : "version initiale en Java"
 		},
 		{
-			"name" : "Delorme, Marc"
+			"name" : "Delorme, Marc",
 			"role" : "auteur",
 			"comment" : "version HTLM5/JS"
 		}
 		{
-			"name" : "http://www.junior-supelec.fr"
+			"name" : "http://www.junior-supelec.fr",
 			"role" : "producteur"
 		}
 		],
