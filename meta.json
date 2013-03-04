@@ -6,11 +6,11 @@
 	"links" : [
 		{
 			"title" : "Document original dans lequel ce grain s'insère",
-			"link" : "http://interstices.info/algo-crepes"
+			"uri" : "http://interstices.info/algo-crepes"
 		},
 		{
 			"title" : "Activité connexe en mode «débranché»",
-			"link" : "http://www-sop.inria.fr/science-participative/mecsci/?page=Grain3.0:Le_cr%C3%AApier_psycho-rigide"		
+			"uri" : "http://www-sop.inria.fr/science-participative/mecsci/?page=Grain3.0:Le_cr%C3%AApier_psycho-rigide"		
 		}
 		],
 	"authors" : [
@@ -32,12 +32,12 @@
 	"licence" : [
 		{
 			"name" : "CC BY-NC-SA",
-			"link" : "http://creativecommons.org/licenses/by-nc-sa/3.0/fr",
+			"uri" : "http://creativecommons.org/licenses/by-nc-sa/3.0/fr",
 			"comment" : "s'applique aux documents"
 		},
 		{
 			"name" : "CeCILL-C",
-			"link" : "http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html",
+			"uri" : "http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html",
 			"comment" : "s'applique au code source"
 		}
 		]
