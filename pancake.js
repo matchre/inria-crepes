@@ -1,3 +1,5 @@
+jQuery.noConflict();
+
 PancakeApp = function() {
 	this.width = 600;
 	this.height = 330;
@@ -32,7 +34,7 @@ PancakeApp.prototype.shufflePancake = function() {
 
 PancakeApp.prototype.setFlipNumber = function(N) {
 	this.numberOfFlip = N;
-	$("#flip").text("Retournements : " + N);
+	jQuery("#flip").text("Retournements : " + N);
 };
 
 PancakeApp.prototype.start = function(canvasId) {
@@ -53,13 +55,13 @@ PancakeApp.prototype.start = function(canvasId) {
 		me.highlight(event.point);
 	}
 
-	$("#shuffle").click(function() {
+	jQuery("#shuffle").click(function() {
 		me.shufflePancake();
 		me.render();
 	});
 
-    $( "#slider-1" ).change( function( event ) {
-    	var value = $("#slider-1").val();
+    jQuery( "#slider-1" ).change( function( event ) {
+    	var value = jQuery("#slider-1").val();
 
     	if (value == me.pancakes.length) {
     		return;
