@@ -16,9 +16,14 @@
 	"authors" : [
 		{
 			"name" : "Monte, Régis",
+			"email" : "regismonte@yahoo.fr",
 			"role" : "auteur",
 			"comment" : "version initiale en Java"
 		},
+		{
+			"name" : "François Rechenmann",
+			"email" : "francois.rechenmann@inria.fr",
+			"role" : "concepteur"
 		{
 			"name" : "Delorme, Marc",
 			"role" : "auteur",
