@@ -21,9 +21,10 @@
 			"comment" : "version initiale en Java"
 		},
 		{
-			"name" : "François Rechenmann",
+			"name" : "Rechenmann, François",
 			"email" : "francois.rechenmann@inria.fr",
 			"role" : "concepteur"
+		},
 		{
 			"name" : "Delorme, Marc",
 			"role" : "auteur",
