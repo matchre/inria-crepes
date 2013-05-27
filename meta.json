@@ -2,50 +2,50 @@
     "name": "Pile de crêpes",
     "width": "600px",
     "height": "400px",
-    "comment" : "Mettre dans l’ordre une pile de crêpes de différentes tailles . . pour comprendre comment en pratique concevoir un algorithme",
-    "link" : "http://interstices.info/algo-crepes",
-    "links" : [
+    "comment": "Mettre dans l’ordre une pile de crêpes de différentes tailles . . pour comprendre comment en pratique concevoir un algorithme",
+    "link": "http://interstices.info/algo-crepes",
+    "links": [
         {
-            "title" : "Document original dans lequel ce grain s'insère",
-            "uri" : "http://interstices.info/algo-crepes"
+            "title": "Document original dans lequel ce grain s'insère",
+            "uri": "http://interstices.info/algo-crepes"
         },
         {
-            "title" : "Activité connexe en mode «débranché»",
-            "uri" : "http://www-sop.inria.fr/science-participative/mecsci/?page=Grain3.0:Le_cr%C3%AApier_psycho-rigide"
+            "title": "Activité connexe en mode «débranché»",
+            "uri": "http://www-sop.inria.fr/science-participative/mecsci/?page=Grain3.0:Le_cr%C3%AApier_psycho-rigide"
         }
-        ],
-    "authors" : [
+    ],
+    "authors": [
         {
-            "name" : "Monte, Régis",
-            "email" : "regismonte@yahoo.fr",
-            "role" : "auteur",
-            "comment" : "version initiale en Java"
+            "name": "Monte, Régis",
+            "email": "regismonte@yahoo.fr",
+            "role": "auteur",
+            "comment": "version initiale en Java"
         },
         {
-            "name" : "Rechenmann, François",
-            "email" : "francois.rechenmann@inria.fr",
-            "role" : "concepteur"
+            "name": "Rechenmann, François",
+            "email": "francois.rechenmann@inria.fr",
+            "role": "concepteur"
         },
         {
-            "name" : "Delorme, Marc",
-            "role" : "auteur",
-            "comment" : "version HTLM5/JS"
+            "name": "Delorme, Marc",
+            "role": "auteur",
+            "comment": "version HTLM5/JS"
         },
         {
-            "name" : "http://www.junior-supelec.fr",
-            "role" : "producteur"
+            "name": "http://www.junior-supelec.fr",
+            "role": "producteur"
         }
-        ],
-    "licenses" : [
+    ],
+    "licenses": [
         {
-            "name" : "CC BY-NC-SA",
-            "uri" : "http://creativecommons.org/licenses/by-nc-sa/3.0/fr",
-            "comment" : "s'applique aux documents"
+            "name": "CC BY-NC-SA",
+            "uri": "http://creativecommons.org/licenses/by-nc-sa/3.0/fr",
+            "comment": "s'applique aux documents"
         },
         {
-            "name" : "CeCILL-C",
-            "uri" : "http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html",
-            "comment" : "s'applique au code source"
+            "name": "CeCILL-C",
+            "uri": "http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html",
+            "comment": "s'applique au code source"
         }
-        ]
+    ]
 }
