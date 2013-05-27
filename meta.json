@@ -3,6 +3,7 @@
     "width": "600px",
     "height": "400px",
     "comment" : "Mettre dans l’ordre une pile de crêpes de différentes tailles . . pour comprendre comment en pratique concevoir un algorithme",
+    "link" : "http://interstices.info/algo-crepes",
     "links" : [
         {
             "title" : "Document original dans lequel ce grain s'insère",
