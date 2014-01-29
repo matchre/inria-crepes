@@ -1,5 +1,4 @@
 /*global define: false */
-/*global alert: false */
 /*jslint browser: true */
 define(['jquery', 'paperjs'],
     function (jQuery, paper) {
@@ -103,9 +102,9 @@ define(['jquery', 'paperjs'],
 
                         if (this.winTest()) {
                             if (!this.algo) {
-                                alert("Votre démarche est encore très exploratoire. Essayez de trouver une démarche systématique");
+                                window.alert("Votre démarche est encore très exploratoire. Essayez de trouver une démarche systématique");
                             } else {
-                                alert("Félicitations vous avez trouvé une démarche systématique et efficace");
+                                window.alert("Félicitations vous avez trouvé une démarche systématique et efficace");
                             }
                             this.shufflePancake();
                         }
