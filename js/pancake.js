@@ -4,9 +4,9 @@ define(['jquery', 'paperjs'],
     function (jQuery, paper) {
         "use strict";
         return {
-            PancakeApp: function() {
+            PancakeApp: function () {
                 var i, flipIndex;
-                this.generatePancake = function(size) {
+                this.generatePancake = function (size) {
                     this.pancakes = [];
                     for (i = 0; i < size; i += 1) {
                         this.pancakes.push({
@@ -16,7 +16,7 @@ define(['jquery', 'paperjs'],
                     this.shufflePancake();
                 };
 
-                this.shufflePancake = function() {
+                this.shufflePancake = function () {
                     for (i = 0; i < this.pancakes.length * 3; i += 1) {
                         flipIndex = Math.floor((Math.random() * this.pancakes.length));
                         this.flip(flipIndex);
@@ -25,12 +25,12 @@ define(['jquery', 'paperjs'],
                     this.algo = true;
                 };
 
-                this.setFlipNumber = function(N) {
+                this.setFlipNumber = function (N) {
                     this.numberOfFlip = N;
                     jQuery("#flip").text("Retournements : " + N);
                 };
 
-                this.start = function(canvasId) {
+                this.start = function (canvasId) {
                     var me = this,
                         canvas = document.getElementById(canvasId),
                         tool;
@@ -40,20 +40,20 @@ define(['jquery', 'paperjs'],
 
                     tool = new paper.Tool();
 
-                    tool.onMouseUp = function(event) {
+                    tool.onMouseUp = function (event) {
                         me.flipPancake(event.point);
                     };
 
-                    tool.onMouseMove = function(event) {
+                    tool.onMouseMove = function (event) {
                         me.highlight(event.point);
                     };
 
-                    jQuery("#shuffle").click(function() {
+                    jQuery("#shuffle").click(function () {
                         me.shufflePancake();
                         me.render();
                     });
 
-                    jQuery("#slider-1").change(function() {
+                    jQuery("#slider-1").change(function () {
                         var value = jQuery("#slider-1").val();
 
                         if (value === me.pancakes.length) {
@@ -67,7 +67,7 @@ define(['jquery', 'paperjs'],
                     this.render();
                 };
 
-                this.highlight = function(point) {
+                this.highlight = function (point) {
                     var hitResult = paper.project.hitTest(point);
 
                     if (hitResult && hitResult.item && typeof hitResult.item.positionIndex === 'number') {
@@ -77,7 +77,7 @@ define(['jquery', 'paperjs'],
                     }
                 };
 
-                this.winTest = function() {
+                this.winTest = function () {
                     var previousSize = this.pancakes[0].size,
                         i;
 
@@ -91,7 +91,7 @@ define(['jquery', 'paperjs'],
                     return true;
                 };
 
-                this.flipPancake = function(point) {
+                this.flipPancake = function (point) {
                     var hitResult = paper.project.hitTest(point);
 
                     if (hitResult && hitResult.item && typeof hitResult.item.positionIndex === 'number') {
@@ -111,7 +111,7 @@ define(['jquery', 'paperjs'],
                     }
                 };
 
-                this.flip = function(index) {
+                this.flip = function (index) {
                     var p = index,
                         t = Math.floor(p / 2),
                         buffer,
@@ -126,7 +126,7 @@ define(['jquery', 'paperjs'],
                     }
                 };
 
-                this.testFlip = function(index) {
+                this.testFlip = function (index) {
                     var nextBigger = this.pancakes.length,
                         i;
 
@@ -148,7 +148,7 @@ define(['jquery', 'paperjs'],
                     this.algo = false;
                 };
 
-                this.render = function(highlightIndex) {
+                this.render = function (highlightIndex) {
                     var i, width, size, raster;
                     paper.project.activeLayer.removeChildren();
 
@@ -169,11 +169,11 @@ define(['jquery', 'paperjs'],
                     paper.view.draw();
                 };
 
-                this.pancakeHeight = function() {
+                this.pancakeHeight = function () {
                     return (this.height - 100) / this.pancakes.length;
                 };
 
-                this.createPancake = function(size, positionIndex, color) {
+                this.createPancake = function (size, positionIndex, color) {
                     var height = this.pancakeHeight(),
                         offset = new paper.Point([0, height]),
                         vecHalfSize = (new paper.Point([size, height])).divide(2),
