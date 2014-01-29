@@ -10,6 +10,9 @@ module.exports = function (grunt) {
 
         jslint: {
             files: [
+                'Gruntfile.js',
+                'js/pancake.js',
+                'js/main.js',
                 'meta.json'
             ],
             options: {
@@ -26,8 +29,8 @@ module.exports = function (grunt) {
     grunt.registerTask('test', 'jslint');
 
     grunt.registerTask('meta_json_pretty_print', function() {
-        var metadata = grunt.file.readJSON('meta.json') ;
-        grunt.file.write('meta.json',JSON.stringify(metadata, null, 4));
-    })
+        var metadata = grunt.file.readJSON('meta.json');
+        grunt.file.write('meta.json', JSON.stringify(metadata, null, 4));
+    });
 
 };

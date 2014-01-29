@@ -4,19 +4,8 @@
 		<title>Grains - Crêpes</title>
 		<meta charset="utf-8" />
 
-
-		<script type="text/javascript" src="js/vendor/jquery-1.8.3.min.js"></script>
-
 		<link rel="stylesheet" href="pancake.css" />
 
-		<script type="text/javascript" src="js/vendor/paper.js"></script>
-		<script type="text/javascript" src="js/pancake.js"></script>
-		<script type="text/javascript">
-			jQuery(function() {
-				var app = new PancakeApp();
-				app.start("app-canvas");
-			});
-		</script>
 	</head>
 	<body>
 		<div id="app">
@@ -36,5 +25,6 @@
 				<input type="range" name="slider-1" id="slider-1" value="10" min="5" max="20" data-mini="true"/>
 			</div>
 		</div>
+        <script data-main="js/main" src="js/vendor/require.js"></script>
 	</body>
 </html>
