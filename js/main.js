@@ -2,7 +2,7 @@
 require.config({
     paths: {
         jquery: 'vendor/jquery-1.8.3.min',
-        paperjs: 'vendor/paper'
+        paperjs: 'vendor/paper-core.min'
     },
     shim: {
         'paperjs': {
