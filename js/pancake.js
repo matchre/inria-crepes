@@ -149,7 +149,7 @@ define(['jquery', 'paperjs'],
                 };
 
                 this.render = function (highlightIndex) {
-                    var i, width, size, raster;
+                    var i, width, size, raster, text;
                     paper.project.activeLayer.removeChildren();
 
                     for (i = 0; i < this.pancakes.length; i += 1) {
@@ -161,6 +161,9 @@ define(['jquery', 'paperjs'],
                             this.createPancake(size, i, 'yellow');
                             raster = new paper.Raster('spatule');
                             raster.position = new paper.Point([this.width / 2 + 50, (i + 1) * this.pancakeHeight() ]);
+                            text = new paper.PointText(new paper.Point([this.width / 2 + 80, (i + 2) * this.pancakeHeight() - 15]));
+                            text.fillColor = 'black';
+                            text.content = (highlightIndex + 1) + " crêpes" ;
                         } else {
                             this.createPancake(size, i);
                         }
