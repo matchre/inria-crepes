@@ -4,7 +4,7 @@ Grain 3.0 : la pile de crêpes
 [![Build Status](https://travis-ci.org/InriaMecsci/crepes.png?branch=master)](https://travis-ci.org/InriaMecsci/crepes)
 
 * [Métadonnées du grain](meta.json)
-* [Le grain en action](http://inriamecsci.github.com/#!/grains/crepes)
+* [Le grain en action](http://matchre.github.com/inria-crepes/crepes)
 
 ### Bibliothèques utilisées 
 
